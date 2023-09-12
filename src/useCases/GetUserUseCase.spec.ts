@@ -14,14 +14,14 @@ describe('GetUserUseCase', () => {
     const moduleRef = await Test.createTestingModule({
       providers: [
         {
-          provide: UserRepository,
+          provide: UserRepository.name,
           useClass: LocalUserRepository,
         },
         GetUserUseCase,
       ],
     }).compile();
 
-    userRepository = moduleRef.get<UserRepository>(UserRepository);
+    userRepository = moduleRef.get<UserRepository>(UserRepository.name);
     spyUserRepositoryGetById = vi.spyOn(userRepository, 'getById');
     getUserUseCase = moduleRef.get<GetUserUseCase>(GetUserUseCase);
   });

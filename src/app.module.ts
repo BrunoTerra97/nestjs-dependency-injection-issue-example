@@ -16,7 +16,7 @@ import { RemoteRepository } from './repositories/RemoteRepository';
   providers: [
     GetUserUseCase,
     RemoteRepository,
-    { provide: UserRepository, useClass: PrismaUserRepository },
+    { provide: UserRepository.name, useClass: PrismaUserRepository },
   ],
 })
 export class AppModule {}
