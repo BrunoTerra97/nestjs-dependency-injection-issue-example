@@ -1,4 +1,7 @@
 ## This is a repository to reproduce a dependecy injection error in nestjs unit tests
+
+### The complete issue on this [stackoverflow link](https://stackoverflow.com/questions/77090192/nestjs-is-not-injecting-repository-dependency-when-testing-using-test-createtest)
+
 ### This repository has two branches 
 - `main` -> Contains the dependency injection issue
 - `working-tests-with-inject-decorator` -> Contains the workaround to make it work
