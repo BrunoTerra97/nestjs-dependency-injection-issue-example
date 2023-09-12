@@ -1,3 +1,9 @@
+## This is a repository to reproduce a dependecy injection error in nestjs unit tests
+### This repository has two branches 
+- `main` -> Contains the dependency injection issue
+- `working-tests-with-inject-decorator` -> Contains the workaround to make it work
+
+  
 ## If you want to run the code this is what you have to do:
 
 #### To run the tests you need to
